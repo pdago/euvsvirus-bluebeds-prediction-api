@@ -1,0 +1,4 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.6
+
+ENV PYTHONPATH=":/"
+COPY ./app /app

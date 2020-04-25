@@ -4,13 +4,16 @@ of the [BlueBeds](https://devpost.com/software/bluebeds) project and it was crea
 
 The prediction model is taken from [here](https://github.com/rachelHey/versus-virus-hack-length-of-stay-prediction).
 # Setup for development
-TBU
+```
+pip install -r requirements/dev-requirements.txt
+```
 
-# Docker image
-## Build
-TBU
-## Run
-TBU
+# Build docker image
+```
+docker build -t bluebeds-prediction-api -f docker/Dockerfile .
+```
 
-# Documentation
-TBU
+# Run docker image
+```
+docker run -it --name bluebeds-prediction -p 80:80 bluebeds-prediction-api
+```
