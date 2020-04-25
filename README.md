@@ -1,3 +1,6 @@
+![Python application](https://github.com/pdago/euvsvirus-bluebeds-prediction-api/workflows/Python%20application/badge.svg?branch=master)
+![Docker](https://github.com/pdago/euvsvirus-bluebeds-prediction-api/workflows/Docker/badge.svg?branch=master)
+
 This repository contains the implementation of the REST API that provides the ICU length-of-stay estimation. It is part
 of the [BlueBeds](https://devpost.com/software/bluebeds) project and it was created during the
 [EUvsVirus](https://euvsvirus.org/) hackaton.
