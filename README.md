@@ -17,3 +17,4 @@ docker build -t bluebeds-prediction-api -f docker/Dockerfile .
 ```
 docker run -it --name bluebeds-prediction -p 80:80 bluebeds-prediction-api
 ```
+After running it you can access the documentation in [localhost/docs](http://localhost:80/docs) 
