@@ -1,8 +1,8 @@
 import pytest
 
 from app.icu_stay_model import IcuStayModel
-import numpy as np
-MODEL_PATH = "/home/pablo/code/euvsvirus/bluebeds-icu-prediction-api/app/data/bed_duation_model_versus_virus_05APRIL2020.sav"
+
+MODEL_PATH = "app/data/bed_duation_model_versus_virus_05APRIL2020.sav"
 
 
 def test_icu_stay_model():
