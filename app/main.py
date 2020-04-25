@@ -1,13 +1,13 @@
 from fastapi import FastAPI, Body
 
-from api import prediction_model
+from app.prediction_model import PredictionModel
 
 
 class Api(FastAPI):
     def __init__(self):
         super(Api, self).__init__()
 
-    def config(self, icu_stay_model: prediction_model):
+    def config(self, icu_stay_model: PredictionModel):
         self.icu_stay_model = icu_stay_model
 
 
@@ -23,3 +23,9 @@ async def root():
 async def predict_icu_stay_time():
     y = app.icu_stay_model.predict(0)
     return y
+
+
+if __name__ == "main":
+    from app.icu_stay_model import IcuStayModel
+    icu_stay_model = IcuStayModel()
+    app.config(icu_stay_model=icu_stay_model)
